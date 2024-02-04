@@ -1,0 +1,141 @@
+/*Stylesheet for personal website*/
+
+body{
+  min-height: 100vh;
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-family: 'Fascinate Inline', system-ui;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header/Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url(assets/tilegreen.png);
+}
+
+.highlight {
+  background-color: white;
+  opacity: 80%;
+  padding: 5px 5px;
+  min-width: 100 px
+}
+
+.highlight h1{
+  text-align: center;
+  color: black;
+  opacity: 100%;
+  font-size: 35px;
+}
+
+.highlight p{
+  text-align: center;
+  color: black;
+  opacity: 100%;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #C1A291;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #C1A291;
+  color: black;
+}
+
+.main{
+    width: 75%;
+    padding: 5px 35px 5px 35px;
+    margin:auto;}
+
+.box{
+  width: auto;
+  background-color: #D3B985;
+  padding: 5px 15px 15px 15px;
+  margin-bottom: 2em;
+}
+
+#bessie{
+  display: flex;
+  justify-content: center;
+}
+
+#headshot{
+  display: flex;
+  justify-content: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+.row{
+  align-items: center;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 50%;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{ 
+  min-height:50px;
+  padding: 5px 35px 5px 35px;
+  background:#628BAD; 
+  text-align: center;
+  text-decoration: white;
+  }
+
+footer p{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: smaller;
+}
+
+@media screen and (max-width: 900px) {
+  .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+  }
+}
